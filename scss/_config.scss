@@ -1,5 +1,6 @@
-$primary-color: rgb(182, 181, 181);
-$secondary-color: rgb(0, 51, 204);
+$primary-color: #444;
+$secondary-color: rgba(40, 250, 239, 0.781);
+$thrid-color: rgba(1, 118, 252, 0.938);
 $show-home-image: true;
 $home-image: url(../img/lightning-5.jpg);
 $background-opacity: 0.7;
@@ -25,5 +26,46 @@ $background-opacity: 0.7;
         background: rgba($primary-color, $background-opacity);
       }
     }
+  }
+}
+
+// Set Text Color
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
+
+@function set-text-color2($color) {
+  @if (lightness($color) > 40) {
+    @return $thrid-color;
+  } @else {
+    @return $secondary-color;
+  }
+}
+
+// Media Query Mixins
+@mixin mediaSm {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin mediaMd {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mediaLg {
+  @media screen and (min-width: 769px) and (max-width: 1170px) {
+    @content;
+  }
+}
+@mixin mediaXl {
+  @media screen and (min-width: 1171px) {
+    @content;
   }
 }
