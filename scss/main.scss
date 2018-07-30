@@ -104,4 +104,62 @@ main {
   color: set-text-color($primary-color);
   height: 60px;
 }
+
+//For Canvas Invader
+
+#Canvas {
+  background: #000;
+}
+#FPSGraphMaker {
+  background: #000;
+}
+#gameover {
+  position: absolute;
+  margin-left: 47%;
+  margin-top: 450px;
+  color: white;
+  font-size: 15pt;
+  font-family: "Arial";
+}
+#reset {
+  position: absolute;
+  margin-left: 48.5%;
+  margin-top: 475px;
+}
+#txt {
+  font-size: 15pt;
+  font-family: "Arial";
+}
+#headermain {
+  margin-left: auto;
+  margin-right: auto;
+  width: 752px;
+}
+#headermain2 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 752px;
+}
+#menu {
+  font-size: 13pt;
+  font-family: "Arial";
+}
+#title {
+  font-size: 25pt;
+  font-family: "Arial";
+}
+#header {
+  float: left;
+}
+#main {
+  margin-left: auto;
+  margin-right: auto;
+  width: 752px;
+}
+#mainright {
+  margin-left: auto;
+  margin-right: auto;
+  width: 752px;
+}
+
 @import "mobile";
