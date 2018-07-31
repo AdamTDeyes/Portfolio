@@ -52,5 +52,5 @@ function cleancanvas() {
   CGraphMaker.clearRect(0, 0, GraphMakerWidth, GraphMakerHeight);
   firsttimerun = true;
   CGraphMaker.closePath();
-  $.post("php/CleantxtFiles.php");
+  //$.post("php/CleantxtFiles.php");
 }

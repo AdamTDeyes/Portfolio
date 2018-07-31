@@ -526,10 +526,10 @@ window.onload = function() {
     if (Intervalcounter < 60) {
       //record 60 seconds worth of data
       //this function will run every second. records the FPS var and puts it into a txt file
-      $.post("php/CanvasInvader.php", {
-        postIntervalcounter: Intervalcounter,
-        postFPS: FPS
-      });
+      //$.post("php/CanvasInvader.php", {
+      //postIntervalcounter: Intervalcounter,
+      //postFPS: FPS
+      //});
       FPSGraphMakerFun(Intervalcounter, FPS);
       Intervalcounter++;
     }
