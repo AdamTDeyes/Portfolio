@@ -163,16 +163,33 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30 px;
-  grid-template-areas: "bioimage bio bio";
-  grid-template-columns: repeat(3, 1fr); }
-  .about-info .bio-image {
+  grid-template-areas: "about";
+  grid-template-columns: repeat(1, 1fr); }
+  .about-info .about {
+    grid-area: bio;
+    font-size: 1.5rem; }
+  .about-info .about {
+    background: #515151;
+    padding: 0.5rem;
+    border-bottom: rgba(40, 250, 239, 0.781) 5px solid; }
+
+.bio-info {
+  display: grid;
+  grid-gap: 30 px;
+  grid-template-areas: "bioimage bio";
+  grid-template-columns: repeat(1, 1fr); }
+  .bio-info .cv-image {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
     border: solid 3px rgba(40, 250, 239, 0.781); }
-  .about-info .bio {
+  .bio-info .bio {
     grid-area: bio;
-    font-size: 1.5rem; }
+    margin: 1rem; }
+  .bio-info .bio {
+    background: #515151;
+    padding: 0.5rem;
+    border-bottom: rgba(40, 250, 239, 0.781) 5px solid; }
 
 .key-info {
   display: grid;
@@ -261,7 +278,7 @@ main {
   align-items: center;
   margin-top: 1rem; }
   .boxes div {
-    font-size: 2rem;
+    font-size: 1rem;
     border: 3px #fff solid;
     padding: 1.5rem 2.5rem;
     margin-bottom: 0.3rem;
