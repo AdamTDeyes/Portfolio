@@ -136,7 +136,7 @@ window.onload = function() {
     invaderArray1 = new Array();
     invaderArray2 = new Array();
     invaderimg = new Image();
-    invaderimg.src = "/Portfolio/img/Invader_1.png"; //sets the invaders image
+    invaderimg.src = "/img/Invader_1.png"; //sets the invaders image
 
     bulletArray1 = new Array();
     bulletArray2 = new Array();
@@ -147,7 +147,7 @@ window.onload = function() {
     bulletArray3 = new Array();
 
     shipimg = new Image();
-    shipimg.src = "/Portfolio/img/Ship.png"; //sets the ship iamge
+    shipimg.src = "/img/Ship.png"; //sets the ship iamge
     shiphp = 1;
     cscore = 0;
 
