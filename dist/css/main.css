@@ -130,7 +130,6 @@ h3 {
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
-    margin-bottom: 2rem;
     padding: 0.2rem 1rem;
     background: rgba(73, 73, 73, 0.7); }
 
@@ -175,19 +174,66 @@ main {
     grid-area: bio;
     font-size: 1.5rem; }
 
-.cv-info {
+.job-info {
   display: grid;
   grid-gap: 30 px;
-  grid-template-areas: "job1" "job2" "job3";
-  grid-template-columns: repeat(3, 1fr); }
-  .cv-info .job-1 {
-    grid-area: job1; }
-  .cv-info .job-2 {
-    grid-area: job2; }
-  .cv-info .job-3 {
-    grid-area: job3; }
-  .cv-info .job {
-    grid-area: job;
+  grid-template-areas: "job1" " job2" " job3";
+  grid-template-columns: repeat(1, 1fr); }
+  .job-info .job-1 {
+    grid-area: job1;
+    margin: 1rem; }
+  .job-info .job-2 {
+    grid-area: job2;
+    margin: 1rem; }
+  .job-info .job-3 {
+    grid-area: job3;
+    margin: 1rem; }
+  .job-info .job {
+    background: #515151;
+    padding: 0.5rem;
+    border-bottom: rgba(40, 250, 239, 0.781) 5px solid; }
+
+.education-info {
+  display: grid;
+  grid-gap: 10 px;
+  grid-template-areas: "education1" "education2" "education3";
+  grid-template-columns: repeat(1, 1fr); }
+  .education-info .education-1 {
+    grid-area: education1;
+    margin: 1rem; }
+  .education-info .education-2 {
+    grid-area: education2;
+    margin: 1rem; }
+  .education-info .education-3 {
+    grid-area: education3;
+    margin: 1rem; }
+  .education-info .education {
+    background: #515151;
+    padding: 0.5rem;
+    border-bottom: rgba(40, 250, 239, 0.781) 5px solid; }
+
+.hobbies-info {
+  display: grid;
+  grid-gap: 10 px;
+  grid-template-areas: "hobbies";
+  grid-template-columns: repeat(1, 1fr); }
+  .hobbies-info .hobbies {
+    grid-area: hobbies;
+    margin: 1rem; }
+  .hobbies-info .hobbies {
+    background: #515151;
+    padding: 0.5rem;
+    border-bottom: rgba(40, 250, 239, 0.781) 5px solid; }
+
+.keyskills-info {
+  display: grid;
+  grid-gap: 10 px;
+  grid-template-areas: "keyskills";
+  grid-template-columns: repeat(1, 1fr); }
+  .keyskills-info .keyskills {
+    grid-area: keyskills;
+    margin: 1rem; }
+  .keyskills-info .keyskills {
     background: #515151;
     padding: 0.5rem;
     border-bottom: rgba(40, 250, 239, 0.781) 5px solid; }

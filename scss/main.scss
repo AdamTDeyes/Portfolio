@@ -26,7 +26,7 @@ h3 {
   }
 
   &.sm-heading {
-    margin-bottom: 2rem;
+    //margin-bottom: 2rem;
     padding: 0.2rem 1rem;
     background: rgba(lighten($primary-color, 2), 0.7);
   }
@@ -88,26 +88,87 @@ main {
   }
 }
 
-.cv-info {
+.job-info {
   display: grid;
   grid-gap: 30 px;
   grid-template-areas:
     "job1"
-    "job2"
-    "job3";
-  grid-template-columns: repeat(3, 1fr);
+    " job2"
+    " job3";
+  grid-template-columns: repeat(1, 1fr);
   .job-1 {
     grid-area: job1;
+    margin: 1rem;
   }
   .job-2 {
     grid-area: job2;
+    margin: 1rem;
   }
   .job-3 {
     grid-area: job3;
+    margin: 1rem;
   }
-
   .job {
-    grid-area: job;
+    background: lighten($primary-color, $amount: 5);
+    padding: 0.5rem;
+    border-bottom: set-text-color2($primary-color) 5px solid;
+  }
+}
+
+.education-info {
+  display: grid;
+  grid-gap: 10 px;
+  grid-template-areas:
+    "education1"
+    "education2"
+    "education3";
+  grid-template-columns: repeat(1, 1fr);
+  .education-1 {
+    grid-area: education1;
+    margin: 1rem;
+  }
+  .education-2 {
+    grid-area: education2;
+
+    margin: 1rem;
+  }
+  .education-3 {
+    grid-area: education3;
+    margin: 1rem;
+  }
+  .education {
+    background: lighten($primary-color, $amount: 5);
+    padding: 0.5rem;
+    border-bottom: set-text-color2($primary-color) 5px solid;
+  }
+}
+
+.hobbies-info {
+  display: grid;
+  grid-gap: 10 px;
+  grid-template-areas: "hobbies";
+  grid-template-columns: repeat(1, 1fr);
+  .hobbies {
+    grid-area: hobbies;
+    margin: 1rem;
+  }
+  .hobbies {
+    background: lighten($primary-color, $amount: 5);
+    padding: 0.5rem;
+    border-bottom: set-text-color2($primary-color) 5px solid;
+  }
+}
+
+.keyskills-info {
+  display: grid;
+  grid-gap: 10 px;
+  grid-template-areas: "keyskills";
+  grid-template-columns: repeat(1, 1fr);
+  .keyskills {
+    grid-area: keyskills;
+    margin: 1rem;
+  }
+  .keyskills {
     background: lighten($primary-color, $amount: 5);
     padding: 0.5rem;
     border-bottom: set-text-color2($primary-color) 5px solid;
