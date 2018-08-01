@@ -72,9 +72,7 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30 px;
-  grid-template-areas:
-    "bioimage bio bio"
-    "job job job";
+  grid-template-areas: "bioimage bio bio";
   grid-template-columns: repeat(3, 1fr);
 
   .bio-image {
@@ -87,6 +85,25 @@ main {
   .bio {
     grid-area: bio;
     font-size: 1.5rem;
+  }
+}
+
+.cv-info {
+  display: grid;
+  grid-gap: 30 px;
+  grid-template-areas:
+    "job1"
+    "job2"
+    "job3";
+  grid-template-columns: repeat(3, 1fr);
+  .job-1 {
+    grid-area: job1;
+  }
+  .job-2 {
+    grid-area: job2;
+  }
+  .job-3 {
+    grid-area: job3;
   }
 
   .job {
