@@ -210,7 +210,7 @@ main {
 .job-info {
   display: grid;
   grid-gap: 30 px;
-  grid-template-areas: "job1" " job2" " job3";
+  grid-template-areas: "job1" "job2" "job3";
   grid-template-columns: repeat(1, 1fr); }
   .job-info .job-1 {
     grid-area: job1;
@@ -426,7 +426,7 @@ main {
     .menu-branding .portrait {
       width: 150px;
       height: 150px; }
-  .about-info {
+  .bio-info {
     grid-template-areas: "bioimage" "bio";
     grid-template-columns: 1fr; }
   .projects {

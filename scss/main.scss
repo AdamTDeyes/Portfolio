@@ -135,8 +135,8 @@ main {
   grid-gap: 30 px;
   grid-template-areas:
     "job1"
-    " job2"
-    " job3";
+    "job2"
+    "job3";
   grid-template-columns: repeat(1, 1fr);
   .job-1 {
     grid-area: job1;
