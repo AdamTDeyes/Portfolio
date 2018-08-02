@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script language="javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script language="javascript" src="/js/FPSGraphMaker.js"></script>
+    <script language="javascript" src="/js/Invader.js"></script>
+    <script language="javascript">
+        document.documentElement.addEventListener('keydown', function (e) {
+            if ((e.keycode || e.which) == 32) {
+                e.preventDefault();
+            }
+        }, false);
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Canvas Invader</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="menu-btn">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+        </div>
+        <nav class="menu">
+            <div class="menu-branding">
+                <div class="portrait"></div>
+            </div>
+            <ul class="menu-nav">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">
+                        About
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="cv.html" class="nav-link">
+                        CV
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">
+                        How To Reach Me
+                    </a>
+                </li>
+                <li class="nav-item current">
+                    <a href="projects.html" class="nav-link">
+                        Projects
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Content -->
+    <div id="headermain">
+        <h1 class="lg-heading">
+            Minecraft in
+            <span class="text-secondary">Unity</span>
+        </h1>
+        <h2 class="sm-heading">
+            Complex Terrian Generation
+        </h2>
+
+        <div class="unity-info">
+            <div class="unity-text_1 utext">
+                <h3>What is this project?</h3>
+                <p>Ever wondered how minecraft managed to generate such a rich and interactive world without massive performance
+                    issues? Well I curentily did and so I put myself to work on learn how this is done, below is but a taste
+                    of some of my tests within the game engine Unity. Although its not the full minecraft title, this test
+                    shows the magic behind the famous terrian generation.
+                </p>
+            </div>
+
+            <div class="unity-img_1">
+                <img src="img/Unity_1.png" alt="unity-pic">
+            </div>
+            <div class="unity-text_2 utext">
+                <p>This project went into great detail about quads, textures and how rendering works when people aren't looking.
+                    The image above is a test which allow infite terrian generation. Just walk in a direction and the land
+                    would form in front of you.
+                </p>
+            </div>
+
+            <div class="unity-img_2">
+                <img src="img/Unity_2.png" alt="unity-pic">
+            </div>
+            <div class="unity-text_3 utext">
+                <p>The image above gives away a huge clue to how a game like minecraft can generate massive worlds without causing
+                    much lag. As shown above, everything is broken down into crunks (coillections of blocks).
+                    <br>
+                    <br>My final test was to add and remove blocks. Although its only basic it shows the technique of how its
+                    done, and it's not done how we think. Interestingly each block add or removed becomes apart of the bigger
+                    game object known as a chunk. All this rerending and texture applying happens in fractions of time when
+                    we place a block.
+                </p>
+            </div>
+
+            <div class="unity-img_3">
+                <img src="img/Unity_3.png" alt="unity-pic">
+            </div>
+
+        </div>
+    </div>
+    <!-- Content End -->
+    <footer id="main-footer">
+        &copy; 2018 Adam T Deyes
+        <script type="text/javascript" src="https://cdn.ywxi.net/js/1.js" async></script>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
