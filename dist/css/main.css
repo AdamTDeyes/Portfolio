@@ -435,5 +435,8 @@ main {
 @media screen and (max-width: 500px) {
   main#home h1 {
     margin-top: 10vh; }
+  .bio-info {
+    grid-template-areas: "bioimage" "bio";
+    grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: 1fr; } }
