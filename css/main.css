@@ -134,7 +134,8 @@ h3 {
     background: rgba(73, 73, 73, 0.7); }
 
 a {
-  color: #ececec; }
+  color: #ececec;
+  text-decoration: none; }
 
 header {
   position: fixed;
