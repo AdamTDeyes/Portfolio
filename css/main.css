@@ -134,8 +134,7 @@ h3 {
     background: rgba(73, 73, 73, 0.7); }
 
 a {
-  color: #ececec;
-  text-decoration: none; }
+  color: #ececec; }
 
 header {
   position: fixed;
@@ -166,12 +165,16 @@ main {
   grid-template-areas: "about";
   grid-template-columns: repeat(1, 1fr); }
   .about-info .about {
-    grid-area: bio;
-    font-size: 1.5rem; }
-  .about-info .about {
+    grid-area: about;
+    font-size: 1.5rem;
     background: #515151;
     padding: 0.5rem;
     border-bottom: rgba(40, 250, 239, 0.781) 5px solid; }
+    .about-info .about a {
+      color: rgba(40, 250, 239, 0.781); }
+      .about-info .about a:hover {
+        color: #fff;
+        transition: all 0.5s ease-out; }
 
 .bio-info {
   display: grid;
