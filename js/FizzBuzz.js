@@ -1,5 +1,5 @@
 window.onload = function() {
-  var countTo;
+  var countTo = 50;
 
   for (i = 0; i < countTo; i++) {
     var current = "";
