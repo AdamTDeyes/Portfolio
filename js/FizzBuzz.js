@@ -1,7 +1,5 @@
 window.onload = function() {
   var countTo;
-  var data = [];
-  var displayData = "Start";
 
   for (i = 0; i < countTo; i++) {
     var current = "";
@@ -14,11 +12,6 @@ window.onload = function() {
     if (i % 3 !== 0 && i % 5 !== 0) {
       current = i;
     }
-    data.push(current);
+    document.getElementById("log").innerHTML += "<br>" + current;
   }
-
-  for (i = 0; i < data.length; i++) {
-    displayData += data[i];
-  }
-  document.getElementById("fizzbuzz").innerHTML = displayData;
 };
