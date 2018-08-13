@@ -1,7 +1,7 @@
 window.onload = function() {
-  var countTo = 50;
+  var countTo = 100;
 
-  for (i = 0; i < countTo; i++) {
+  for (i = 0; i <= countTo; i++) {
     var current = "";
     if (i % 3 === 0) {
       current += "Fizz";

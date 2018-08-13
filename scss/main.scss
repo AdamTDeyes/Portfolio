@@ -243,6 +243,38 @@ main {
   }
 }
 
+.fizzbuzz-info {
+  display: grid;
+  grid-gap: 10 px;
+  grid-template-areas:
+    "fizzbuzztext fizzbuzztext"
+    "fizzbuzzprogram fizzbuzzcode";
+  grid-template-columns: repeat(1, 1fr);
+  .fizzbuzz-text {
+    grid-area: fizzbuzztext;
+    margin: 1rem;
+    background: lighten($primary-color, $amount: 5);
+    padding: 0.5rem;
+    border-bottom: set-text-color2($primary-color) 5px solid;
+  }
+
+  .fizzbuzz {
+    grid-area: fizzbuzzprogram;
+    margin: 1rem;
+    background: lighten($primary-color, $amount: 5);
+    padding: 0.5rem;
+    border-bottom: set-text-color2($primary-color) 5px solid;
+  }
+
+  .fizzbuzz-code {
+    grid-area: fizzbuzzcode;
+    margin: 1rem;
+    background: lighten($primary-color, $amount: 5);
+    padding: 0.5rem;
+    border-bottom: set-text-color2($primary-color) 5px solid;
+  }
+}
+
 // Button Styles
 
 .btn {
