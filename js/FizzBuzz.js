@@ -20,5 +20,5 @@ window.onload = function() {
   for (i = 0; i < data.length; i++) {
     displayData += data[i];
   }
-  document.getElementById("fizzbuzz").innerHTML = "Hello World";
+  document.getElementById("fizzbuzz").innerHTML = displayData;
 };
