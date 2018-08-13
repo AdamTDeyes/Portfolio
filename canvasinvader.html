@@ -64,57 +64,60 @@
     </header>
 
     <!-- Content -->
-    <div id="headermain">
-        <h1 class="lg-heading">
-            HTLM5
-            <span class="text-secondary">Canvas</span>
-        </h1>
-        <h2 class="sm-heading">
-            Canvas Invader
-        </h2>
+    <main id="canvas-project">
+        <div id="headermain">
+            <h1 class="lg-heading">
+                HTLM5
+                <span class="text-secondary">Canvas</span>
+            </h1>
+            <h2 class="sm-heading">
+                Canvas Invader
+            </h2>
 
-        <div class="canvas-info">
-            <div class="canvas-text">
-                <p>What is canvas invader?
-                    <br>
-                    <br>Canvas invader is a game, a test and a project that I worked on while at uni. It is built on HTML 5 Canvas,
-                    and is to show the capabilities and power of canvas. Below you will find a very simple game, but with
-                    very complex background processes. This game will allow you to stress test the performance of Canvas
-                    on your system. Feel free to increase the invader amount and watch the FPS change. Originally this bench-marking
-                    game was a test between canvas and flash to see which of the two performs better (I'll give you a clue
-                    which, its not flash), but now its a bit of history which demonstrates the flexibility of canvas.
-                    <br>
-                    <br>The controls are: left/right arrow keys to move, space bar to shoot. If stress testing I would recommend
-                    turning on god-mode.
-                </p>
+            <div class="canvas-info">
+                <div class="canvas-text">
+                    <p>What is canvas invader?
+                        <br>
+                        <br>Canvas invader is a game, a test and a project that I worked on while at uni. It is built on HTML
+                        5 Canvas, and is to show the capabilities and power of canvas. Below you will find a very simple
+                        game, but with very complex background processes. This game will allow you to stress test the performance
+                        of Canvas on your system. Feel free to increase the invader amount and watch the FPS change. Originally
+                        this bench-marking game was a test between canvas and flash to see which of the two performs better
+                        (I'll give you a clue which, its not flash), but now its a bit of history which demonstrates the
+                        flexibility of canvas.
+                        <br>
+                        <br>The controls are: left/right arrow keys to move, space bar to shoot. If stress testing I would recommend
+                        turning on god-mode.
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
-    <div id="headermain2">
-        <div id="header">
-            <input type="checkbox" name="godmode" id="godmode" class="checkbox_check" value="true">
-            <label id="txt">God Mode |</label>
-            <label id="txt"> Invader Amount: </label>
-            <input type="number" id="quantity" value="50" min="1" max="5000">
-            <button id="set">Set</button>
-            <br>
+        <div id="headermain2">
+            <div id="header">
+                <input type="checkbox" name="godmode" id="godmode" class="checkbox_check" value="true">
+                <label id="txt">God Mode |</label>
+                <label id="txt"> Invader Amount: </label>
+                <input type="number" id="quantity" value="50" min="1" max="5000">
+                <button id="set">Set</button>
+                <br>
+            </div>
         </div>
-    </div>
-    <p id="gameover">Game Over</p>
-    <button id="reset">Reset</button>
-    <div id="main">
-        <canvas id="Canvas" width="750" height="750">
-            Needs Chrome...
-        </canvas>
-        <!-- The canvas -->
-    </div>
-    <div id="mainright">
-        <label id="txt">Graph</label>
-        <canvas id="FPSGraphMaker" width="750" height="750">
-            Needs Chrome...
-        </canvas>
-        <!-- The canvas -->
-    </div>
+        <p id="gameover">Game Over</p>
+        <button id="reset">Reset</button>
+        <div id="main">
+            <canvas id="Canvas" width="750" height="750">
+                Needs Chrome...
+            </canvas>
+            <!-- The canvas -->
+        </div>
+        <div id="mainright">
+            <label id="txt">Graph</label>
+            <canvas id="FPSGraphMaker" width="750" height="750">
+                Needs Chrome...
+            </canvas>
+            <!-- The canvas -->
+        </div>
+    </main>
     <!-- Content End -->
     <footer id="main-footer">
         &copy; 2018 Adam T Deyes

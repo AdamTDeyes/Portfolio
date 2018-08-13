@@ -64,18 +64,45 @@
 
     <!-- Content -->
     <main id="fizzbuzz-project">
-        <div id="headermain">
-            <h1 class="lg-heading">
-                Fizz
-                <span class="text-secondary">Buzz</span>
-            </h1>
-            <h2 class="sm-heading">
-                Simple FizzBuzz programmers test
-            </h2>
-            <div id="main">
-                <div id="fizzbuzz">
-                    FizzBuzz:
-                </div>
+        <h1 class="lg-heading">
+            Fizz
+            <span class="text-secondary">Buzz</span>
+        </h1>
+        <h2 class="sm-heading">
+            Simple FizzBuzz programmers test
+        </h2>
+        <div class="fizzbuzz-info">
+            <div class="fizzbuzz-text">
+                <p>FizzBuzz is a simple programmers test which is designed to ensure that a programmer can create a simple
+                    <br>program, it works like this. The program will count to 100 and every number that is a divisible by
+                    <br>3, instead of printing the number it will print the word 'Fizz'. The program will do the same for
+                    <br>numbers divisible by 5 and print the word 'Buzz'. Numbers that are divisible by both will print FizzBuzz.
+                    <br>Simple.
+                </p>
+            </div>
+
+            <div id="fizzbuzz" class="fizzbuzz">
+                FizzBuzz:
+            </div>
+            <div class="fizzbuzz-code">
+                <ol>
+                    <li>window.onload = function() {</li>
+                    <li>&emsp;var countTo = 100;</li>
+                    <li>&emsp;for (i = 0; i &lt=c ountTo; i++) {</li>
+                    <li>&emsp;&emsp;var current = "";</li>
+                    <li>&emsp;&emsp;if (i % 3 === 0) {</li>
+                    <li>&emsp;&emsp;&emsp;current += "Fizz";</li>
+                    <li>&emsp;&emsp;}</li>
+                    <li>&emsp;&emsp;if (i % 5 === 0) {</li>
+                    <li>&emsp;&emsp;&emsp;current += "Buzz";</li>
+                    <li>&emsp;&emsp;}</li>
+                    <li>&emsp;&emsp;if (i % 3 !== 0 &amp&amp i % 5 !== 0) {</li>
+                    <li>&emsp;&emsp;&emsp;current = i;</li>
+                    <li>&emsp;&emsp;}</li>
+                    <li>&emsp;&emsp;document.getElementById("fizzbuzz").innerHTML += "&ltbr>" + current;</li>
+                    <li>&emsp;}</li>
+                    <li>};</li>
+                </ol>
             </div>
         </div>
     </main>

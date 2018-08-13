@@ -287,6 +287,30 @@ main {
       border-color: rgba(40, 250, 239, 0.781);
       transition: all 0.5s ease-out; }
 
+.fizzbuzz-info {
+  display: grid;
+  grid-gap: 10 px;
+  grid-template-areas: "fizzbuzztext fizzbuzztext" "fizzbuzzprogram fizzbuzzcode";
+  grid-template-columns: repeat(1, 1fr); }
+  .fizzbuzz-info .fizzbuzz-text {
+    grid-area: fizzbuzztext;
+    margin: 1rem;
+    background: #515151;
+    padding: 0.5rem;
+    border-bottom: rgba(40, 250, 239, 0.781) 5px solid; }
+  .fizzbuzz-info .fizzbuzz {
+    grid-area: fizzbuzzprogram;
+    margin: 1rem;
+    background: #515151;
+    padding: 0.5rem;
+    border-bottom: rgba(40, 250, 239, 0.781) 5px solid; }
+  .fizzbuzz-info .fizzbuzz-code {
+    grid-area: fizzbuzzcode;
+    margin: 1rem;
+    background: #515151;
+    padding: 0.5rem;
+    border-bottom: rgba(40, 250, 239, 0.781) 5px solid; }
+
 .btn, .btn-dark, .btn-light {
   display: block;
   padding: 0.5rem 1rem;
