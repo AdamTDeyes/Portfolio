@@ -1,7 +1,7 @@
 window.onload = function() {
   var countTo;
   var data = [];
-  var displayData;
+  var displayData = "Start";
 
   for (i = 0; i < countTo; i++) {
     var current = "";
