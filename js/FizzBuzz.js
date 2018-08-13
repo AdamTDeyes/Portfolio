@@ -12,6 +12,6 @@ window.onload = function() {
     if (i % 3 !== 0 && i % 5 !== 0) {
       current = i;
     }
-    document.getElementById("log").innerHTML += "<br>" + current;
+    document.getElementById("fizzbuzz").innerHTML += "<br>" + current;
   }
 };
