@@ -489,7 +489,10 @@ main {
     grid-template-areas: "bioimage" "bio";
     grid-template-columns: 1fr; }
   .projects {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+  .fizzbuzz-info {
+    grid-template-areas: "fizzbuzztext" "fizzbuzzprogram" "fizzbuzzcode";
+    grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
@@ -498,4 +501,7 @@ main {
     grid-template-areas: "bioimage" "bio";
     grid-template-columns: 1fr; }
   .projects {
+    grid-template-columns: 1fr; }
+  .fizzbuzz-info {
+    grid-template-areas: "fizzbuzztext" "fizzbuzzprogram" "fizzbuzzcode";
     grid-template-columns: 1fr; } }
