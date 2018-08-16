@@ -258,6 +258,9 @@ main {
     border-bottom: set-text-color2($primary-color) 5px solid;
   }
 
+  font-size: 1.5rem;
+  padding: 0.5rem;
+
   .fizzbuzz {
     grid-area: fizzbuzzprogram;
     margin: 1rem;
