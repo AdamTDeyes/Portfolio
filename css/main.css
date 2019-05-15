@@ -214,7 +214,7 @@ main {
 .job-info {
   display: grid;
   grid-gap: 30 px;
-  grid-template-areas: "job1" "job2" "job3";
+  grid-template-areas: "job1" "job2" "job3" "job4";
   grid-template-columns: repeat(1, 1fr); }
   .job-info .job-1 {
     grid-area: job1;
@@ -223,6 +223,9 @@ main {
     grid-area: job2;
     margin: 1rem; }
   .job-info .job-3 {
+    grid-area: job3;
+    margin: 1rem; }
+  .job-info .job-4 {
     grid-area: job3;
     margin: 1rem; }
   .job-info .job {
