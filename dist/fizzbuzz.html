@@ -1,115 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <script language="javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <head>
+    <script
+      language="javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"
+    ></script>
     <script language="javascript" src="/js/FizzBuzz.js"></script>
     <script language="javascript">
-        document.documentElement.addEventListener('keydown', function (e) {
-            if ((e.keycode || e.which) == 32) {
-                e.preventDefault();
-            }
-        }, false);
+      document.documentElement.addEventListener(
+        "keydown",
+        function(e) {
+          if ((e.keycode || e.which) == 32) {
+            e.preventDefault();
+          }
+        },
+        false
+      );
     </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.css" />
     <title>Canvas Invader</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <header>
-        <div class="menu-btn">
-            <div class="btn-line"></div>
-            <div class="btn-line"></div>
-            <div class="btn-line"></div>
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+      </div>
+      <nav class="menu">
+        <div class="menu-branding">
+          <div class="portrait"></div>
         </div>
-        <nav class="menu">
-            <div class="menu-branding">
-                <div class="portrait"></div>
-            </div>
-            <ul class="menu-nav">
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link">
-                        Home
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="about.html" class="nav-link">
-                        About
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="cv.html" class="nav-link">
-                        CV
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="contact.html" class="nav-link">
-                        How To Reach Me
-                    </a>
-                </li>
-                <li class="nav-item current">
-                    <a href="projects.html" class="nav-link">
-                        Projects
-                    </a>
-                </li>
-            </ul>
-        </nav>
+        <ul class="menu-nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">
+              Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">
+              About
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="cv.html" class="nav-link">
+              CV
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">
+              How To Reach Me
+            </a>
+          </li>
+          <li class="nav-item current">
+            <a href="projects.html" class="nav-link">
+              Projects
+            </a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <!-- Content -->
     <main id="about">
-        <h1 class="lg-heading">
-            Fizz
-            <span class="text-secondary">Buzz</span>
-        </h1>
-        <h2 class="sm-heading">
-            Simple FizzBuzz programmers test
-        </h2>
-        <div class="fizzbuzz-info">
-            <div class="fizzbuzz-text">
-                <p>FizzBuzz is a simple programmers test which is designed to ensure that a programmer can create a simple program,
-                    it works like this. The program will count to 100 and every number that is a divisible by 3, instead
-                    of printing the number it will print the word 'Fizz'. The program will do the same for numbers divisible
-                    by 5 and print the word 'Buzz'. Numbers that are divisible by both will print FizzBuzz. Simple.
-                </p>
-            </div>
-
-            <div id="fizzbuzz" class="fizzbuzz">
-            </div>
-            <div class="fizzbuzz-code">
-                <ol>
-                    <li>window.onload = function() {</li>
-                    <li>&emsp;var countTo = 100;</li>
-                    <li>&emsp;for (i = 0; i &lt=c ountTo; i++) {</li>
-                    <li>&emsp;&emsp;var current = "";</li>
-                    <li>&emsp;&emsp;if (i % 3 === 0) {</li>
-                    <li>&emsp;&emsp;&emsp;current += "Fizz";</li>
-                    <li>&emsp;&emsp;}</li>
-                    <li>&emsp;&emsp;if (i % 5 === 0) {</li>
-                    <li>&emsp;&emsp;&emsp;current += "Buzz";</li>
-                    <li>&emsp;&emsp;}</li>
-                    <li>&emsp;&emsp;if (i % 3 !== 0 &amp&amp i % 5 !== 0) {</li>
-                    <li>&emsp;&emsp;&emsp;current = i;</li>
-                    <li>&emsp;&emsp;}</li>
-                    <li>&emsp;&emsp;document.getElementById("fizzbuzz").innerHTML += "&ltbr>" + current;</li>
-                    <li>&emsp;}</li>
-                    <li>};</li>
-                </ol>
-            </div>
+      <h1 class="lg-heading">
+        Fizz
+        <span class="text-secondary">Buzz</span>
+      </h1>
+      <h2 class="sm-heading">
+        Simple FizzBuzz programmers test
+      </h2>
+      <div class="fizzbuzz-info">
+        <div class="fizzbuzz-text">
+          <p>
+            FizzBuzz is a simple programmers test which is designed to ensure
+            that a programmer can create a simple program, it works like this.
+            The program will count to 100 and every number that is a divisible
+            by 3, instead of printing the number it will print the word 'Fizz'.
+            The program will do the same for numbers divisible by 5 and print
+            the word 'Buzz'. Numbers that are divisible by both will print
+            FizzBuzz. Simple.
+          </p>
         </div>
+
+        <div id="fizzbuzz" class="fizzbuzz"></div>
+        <div class="fizzbuzz-code">
+          <ol>
+            <li>window.onload = function() {</li>
+            <li>&emsp;var countTo = 100;</li>
+            <li>&emsp;for (i = 0; i &lt=c ountTo; i++) {</li>
+            <li>&emsp;&emsp;var current = "";</li>
+            <li>&emsp;&emsp;if (i % 3 === 0) {</li>
+            <li>&emsp;&emsp;&emsp;current += "Fizz";</li>
+            <li>&emsp;&emsp;}</li>
+            <li>&emsp;&emsp;if (i % 5 === 0) {</li>
+            <li>&emsp;&emsp;&emsp;current += "Buzz";</li>
+            <li>&emsp;&emsp;}</li>
+            <li>&emsp;&emsp;if (i % 3 !== 0 &amp&amp i % 5 !== 0) {</li>
+            <li>&emsp;&emsp;&emsp;current = i;</li>
+            <li>&emsp;&emsp;}</li>
+            <li>
+              &emsp;&emsp;document.getElementById("fizzbuzz").innerHTML +=
+              "&ltbr>" + current;
+            </li>
+            <li>&emsp;}</li>
+            <li>};</li>
+          </ol>
+        </div>
+      </div>
     </main>
     <!-- Content End -->
     <footer id="main-footer">
-        &copy; 2018 Adam T Deyes
-        <script type="text/javascript" src="https://cdn.ywxi.net/js/1.js" async></script>
+      &copy; 2019 Adam T Deyes
+      <script
+        type="text/javascript"
+        src="https://cdn.ywxi.net/js/1.js"
+        async
+      ></script>
     </footer>
     <script src="js/main.js"></script>
-</body>
-
+  </body>
 </html>
