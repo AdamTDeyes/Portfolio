@@ -142,12 +142,12 @@ main {
 .job-info {
   display: grid;
   grid-gap: 30 px;
+  grid-template-columns: repeat(1, 1fr);
   grid-template-areas:
     "job1"
     "job2"
     "job3"
     "job4";
-  grid-template-columns: repeat(1, 1fr);
   .job-1 {
     grid-area: job1;
     margin: 1rem;
